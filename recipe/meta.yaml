@@ -21,13 +21,11 @@ requirements:
     - {{ stdlib('c') }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
   host:
     - python
     - pip
     - setuptools
     - pybind11
-    - numpy
     - openjph
   run:
     - python
