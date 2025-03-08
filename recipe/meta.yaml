@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/o/ojph/ojph-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
   sha256: 65baf432cce23ce26839eb8f4b0833b256b143205abf8deaea0eb819422d37ee
 
 build:
