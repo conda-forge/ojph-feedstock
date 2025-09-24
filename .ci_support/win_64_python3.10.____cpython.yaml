@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 openjph:
-- '0.22'
+- '0.24'
 pin_run_as_build:
   python:
     min_pin: x.x
