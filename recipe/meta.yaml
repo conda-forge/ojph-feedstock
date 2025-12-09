@@ -11,6 +11,7 @@ source:
 build:
   script: python -m pip install . -vv
   number: 0
+  skip: true  # [py<312]
 
 requirements:
   build:
