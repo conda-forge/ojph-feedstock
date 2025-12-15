@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: ojph
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
-  sha256: bdb050671e531ee8aed86421f440260fdc620f5ab43b2bc6ec00f8e3339d5ff8
+  sha256: 555f6285ba1882e5bee9e1d65a2bea45df3629dcbc61e4693e5d4f16c25635fc
 
 build:
   script: python -m pip install . -vv
