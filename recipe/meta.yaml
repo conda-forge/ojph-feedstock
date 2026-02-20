@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
-  sha256: 3144c043ef466e8f6c5884ff09abb74abdec76fad401a732681b5c437539fed7
+  sha256: a17073c62ea6821a60076dc7ad8bfc96a05c53d40a6612f3748dea078f425113
 
 build:
   script: python -m pip install . -vv
