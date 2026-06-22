@@ -10,7 +10,7 @@ source:
 
 build:
   script: python -m pip install . -vv
-  number: 3
+  number: 4
   skip: true  # [py<312]
 
 requirements:
