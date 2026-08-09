@@ -1,5 +1,5 @@
 {% set version = "0.10.0" %}
-{% set fork_version = "1.0.0" %}
+{% set fork_version = "1.0.1" %}
 
 package:
   name: ojph
@@ -14,9 +14,9 @@ source:
   # the fork's only consumer and the two are co-developed and released
   # together, so there is no library to share with other packages. The tag
   # ojph-{{ fork_version }} pins git hash
-  # cb6b552e4fa087aae4be9b8b6a55287d5c0dd591.
+  # f03eff4909aa3f0538949e0a2ef3d20f23a39994.
   - url: https://github.com/hmaarrfk/OpenJPH/archive/refs/tags/ojph-{{ fork_version }}.tar.gz
-    sha256: 07a6cc7154e54db281d682257d72641c121588f25df11f685855d9049cb525e5
+    sha256: a7a22ed59e5b863883e675ae92dc7a9b01e2a8cd0b40c746f6f6776ee0e84293
     folder: subprojects/ojph
 
 build:
