@@ -21,4 +21,8 @@ cmake --build "${SRC_DIR}/build-ojph" --parallel "${CPU_COUNT}"
 cmake --install "${SRC_DIR}/build-ojph"
 
 export OPENJPH_INSTALL_DIR="${SRC_DIR}/openjph-install"
-python -m pip install . -vv --no-deps --no-build-isolation
+# setup.py locates the shared libhwy (which the hwy kernels dispatch
+# through) via CONDA_PREFIX; in conda-build the host prefix is PREFIX,
+# so point it there for the pip step or the extension underlinks and
+# fails at import with an undefined hwy symbol.
+CONDA_PREFIX="${PREFIX}" python -m pip install . -vv --no-deps --no-build-isolation
