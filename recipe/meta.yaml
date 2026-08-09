@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 {% set fork_version = "1.0.1" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
-    sha256: bab1ca6175f904e012410ab49bda98b213a5701c1bcfd8212f4b50274441ef72
+    sha256: e515f7df85a800610af31c04724f742899d879307532fe478ab11fc7aa91d87a
   # Since 0.10.0, ojph statically links the "ojph" fork of OpenJPH (renamed
   # so it is co-installable with upstream OpenJPH) instead of linking the
   # openjph package. The static link is deliberate: this Python package is
@@ -36,7 +36,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - pybind11
+    - nanobind
     # header-only build dependency of the vendored fork (Google Highway
     # SIMD kernels); nothing is linked at run time
     - libhwy
