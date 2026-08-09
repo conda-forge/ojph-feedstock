@@ -16,8 +16,8 @@ cxx_compiler_version:
 - '14'
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma10
-openjph:
-- '0.31'
+libhwy:
+- '1.4'
 pin_run_as_build:
   python:
     min_pin: x.x
