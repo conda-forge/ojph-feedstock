@@ -1,5 +1,5 @@
-{% set version = "0.10.1" %}
-{% set fork_version = "1.0.1" %}
+{% set version = "0.10.2" %}
+{% set fork_version = "1.1.1" %}
 
 package:
   name: ojph
@@ -7,16 +7,16 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
-    sha256: e515f7df85a800610af31c04724f742899d879307532fe478ab11fc7aa91d87a
+    sha256: c31d832461eb00e8171891cbe8e9932bbf3db367e355838f200542aadfbbf40b
   # Since 0.10.0, ojph statically links the "ojph" fork of OpenJPH (renamed
   # so it is co-installable with upstream OpenJPH) instead of linking the
   # openjph package. The static link is deliberate: this Python package is
   # the fork's only consumer and the two are co-developed and released
   # together, so there is no library to share with other packages. The tag
   # ojph-{{ fork_version }} pins git hash
-  # f03eff4909aa3f0538949e0a2ef3d20f23a39994.
+  # aeda6ef31dc46226d42c9334c2de448063996c82.
   - url: https://github.com/hmaarrfk/OpenJPH/archive/refs/tags/ojph-{{ fork_version }}.tar.gz
-    sha256: a7a22ed59e5b863883e675ae92dc7a9b01e2a8cd0b40c746f6f6776ee0e84293
+    sha256: 39b2c10f6180b97df4a87fc1ac72f204da95dc97c878e325cb192da3d8f6e9eb
     folder: subprojects/ojph
 
 build:
