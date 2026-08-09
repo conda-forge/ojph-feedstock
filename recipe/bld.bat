@@ -21,9 +21,5 @@ cmake --install "%SRC_DIR%\build-ojph"
 if errorlevel 1 exit 1
 
 set "OPENJPH_INSTALL_DIR=%SRC_DIR%\openjph-install"
-:: setup.py locates the hwy import library via CONDA_PREFIX\Library;
-:: in conda-build the host prefix is PREFIX, so point it there for the
-:: pip step (the hwy kernels dispatch through the Highway library).
-set "CONDA_PREFIX=%PREFIX%"
 python -m pip install . -vv --no-deps --no-build-isolation
 if errorlevel 1 exit 1

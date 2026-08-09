@@ -8,6 +8,11 @@ package:
 source:
   - url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
     sha256: c31d832461eb00e8171891cbe8e9932bbf3db367e355838f200542aadfbbf40b
+    patches:
+      # Backport of ramonaoptics/ojph#42: setup.py only searched
+      # CONDA_PREFIX for libhwy; under conda-build the host prefix is
+      # PREFIX, so the extension underlinked. Drop with the next release.
+      - patches/0001-search-prefix-for-libhwy.patch
   # Since 0.10.0, ojph statically links the "ojph" fork of OpenJPH (renamed
   # so it is co-installable with upstream OpenJPH) instead of linking the
   # openjph package. The static link is deliberate: this Python package is
