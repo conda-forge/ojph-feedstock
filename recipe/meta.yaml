@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
+  - url: https://files.pythonhosted.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
     sha256: c31d832461eb00e8171891cbe8e9932bbf3db367e355838f200542aadfbbf40b
     patches:
       # Backport of ramonaoptics/ojph#42: setup.py only searched
@@ -25,7 +25,7 @@ source:
     folder: subprojects/ojph
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<312]
 
 requirements:
