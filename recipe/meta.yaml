@@ -18,7 +18,7 @@ source:
     - patches/0002-optionally-link-an-installed-libojph.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [py<312]
 
 requirements:
@@ -36,7 +36,7 @@ requirements:
     - nanobind
     # The shared C++ library of the OpenJPH fork; its run_exports pin the
     # run time libojph to the same <major>.<minor>.
-    - libojph >=1.1.2,<1.2
+    - libojph >=1.1.3,<1.2
   run:
     - python
     - numpy >=2.1
