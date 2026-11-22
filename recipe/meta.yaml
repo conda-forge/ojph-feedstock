@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: ojph
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/o/ojph/ojph-{{ version }}.tar.gz
-  sha256: 86b1f79ca6ac3e0f4db7d52da57305bbfb5d72dbaf5853cfbf7f19e23d80a424
+  sha256: 2c719c3460bf9c0da66c21f0c61f335c8fe0c6be328b25edca2568e07313b3e3
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - nanobind
     # The shared C++ library of the OpenJPH fork; its run_exports pin the
     # run time libojph to the same <major>.<minor>.
-    - libojph >=1.2.0,<1.3
+    - libojph >=1.2.1,<1.3
   run:
     - python
     - numpy >=2.1
